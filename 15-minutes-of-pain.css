@@ -1,0 +1,44 @@
+header, footer, section {
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+
+body, html{
+    border: none;
+}
+
+header{
+    width:100%;
+    height: 100px;
+
+}
+
+section{
+    width: 33.1%;
+    height: 400px;
+    float: left;
+}
+
+footer{
+    width:100%;
+    height: 100px;
+    clear:both;
+}
+
+@media (max-width: 700px) {
+    section {
+        background-color: coral;
+    }
+}
+
+@media (min-width: 950px) {
+    header:hover, footer:hover {
+        border: 6px dashed purple;
+    }
+}
+
+@media screen and (orientation:portrait){
+    section{
+        border: 5px blue dotted;
+    }
+}
